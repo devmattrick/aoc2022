@@ -1,7 +1,5 @@
 use anyhow::Result;
 
-use crate::input_tests;
-
 fn part1(input: &str) -> Result<u32> {
     let packs = input.split("\n\n");
 
@@ -38,8 +36,6 @@ fn part2(input: &str) -> Result<u32> {
 
     Ok(values[0] + values[1] + values[2])
 }
-
-input_tests!(1, part1, part2);
 
 #[cfg(test)]
 mod tests_example {
