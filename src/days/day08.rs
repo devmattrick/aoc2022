@@ -5,7 +5,6 @@ use anyhow::{Context, Result};
 #[derive(Debug, Clone, Copy)]
 struct GridItem {
     height: i32,
-    visible: bool,
 }
 
 #[derive(Debug)]
@@ -25,10 +24,7 @@ impl Grid {
             for char in line {
                 let height = i32::from_str_radix(&char.to_string(), 10)?;
 
-                row.push(GridItem {
-                    height,
-                    visible: false,
-                });
+                row.push(GridItem { height });
             }
 
             trees.push(row);
