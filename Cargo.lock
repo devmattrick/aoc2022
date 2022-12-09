@@ -14,6 +14,7 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "indoc",
+ "lazy_static",
 ]
 
 [[package]]
@@ -21,3 +22,9 @@ name = "indoc"
 version = "1.0.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "adab1eaa3408fb7f0c777a73e7465fd5656136fc93b670eb6df3c88c2c1344e3"
+
+[[package]]
+name = "lazy_static"
+version = "1.4.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e2abad23fbc42b3700f2f279844dc832adb2b2eb069b2df918f455c4e18cc646"
